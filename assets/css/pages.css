@@ -1,0 +1,520 @@
+  @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Inter", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    margin: 0;
+    padding: 0;
+    display: initial;
+    background: white;
+    position: relative;
+    top: 0;
+    z-index: 0;
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    .office-card-layout {
+      flex-direction: column !important;
+      align-items: start;
+    }
+
+    .pages-hero {
+      border-bottom: 0px solid rgba(128, 128, 128, 0.388) !important;
+      margin-top: 0rem !important;
+      padding: 3rem;
+      overflow-x: hidden;
+    }
+
+    .pages-hero,
+    .trend-block .locations {
+      padding: 3rem 1.5rem !important;
+    }
+
+    .mainpage-hero {
+      padding: 1.5rem !important;
+    }
+
+    .estimate-project {
+      padding: 1.25rem !important;
+    }
+
+
+
+    .contact-block-description,
+    .block-description {
+      font-size: 40px !important;
+    }
+
+    .contact-block-p {
+      width: 90% !important;
+    }
+
+    .about-paragraph {
+      font-size: 14px !important;
+    }
+
+    .cardh {
+      font-size: 16px !important;
+    }
+
+
+
+  }
+
+
+
+  .pages-hero {
+    background: linear-gradient(orangered, orange);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    padding: 3rem;
+    gap: 20px
+  }
+
+  .pages-hero::after {
+    content: '';
+    opacity: 0.3;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color: rgba(255, 194, 114, 0.647);
+  }
+
+  .hero-img {
+    position: relative;
+    z-index: 0;
+    top: 0px;
+    border-bottom: 0
+  }
+
+  .hero-img::after,
+  .hero-img::before {
+    content: '';
+    clip-path: inset(0 0 0 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url(/assets/grad-bg.jpg)no-repeat;
+    background-size: cover;
+  }
+
+  .hero-img::before {
+    filter: none;
+    z-index: 1;
+    background: url("/assets/noise.png")repeat;
+  }
+
+  .pages-hero-image {
+    background: url(/assets/icons/blog-hero.gif)no-repeat center center;
+    height: 150px;
+    width: 150px;
+    background-size: contain;
+  }
+
+
+
+  .trend-block {
+    padding: 5rem 3rem;
+    margin: 0;
+  }
+
+  /**************************** Contact Page ************************************/
+
+  .locations {
+    margin: 0;
+    padding: 3rem;
+    gap: 20px;
+    filter: hue-rotate(150deg);
+    position: relative;
+    z-index: 0
+  }
+
+
+
+  .locations::after {
+    content: '';
+    /* background: url(https://www.alliancetek.com/new_design/images/icons/map_pattern.svg)no-repeat; */
+    background: white;
+    background-size: cover;
+    opacity: 0.35;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
+  .flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .contact-block-title,
+  .contact-block-title2 {
+    display: inline;
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 2.5rem;
+    position: relative;
+  }
+
+  .contact-block-title::before,
+  .contact-block-title::after,
+  .contact-block-title2::before,
+  .contact-block-title2::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(135deg, orangered, orange);
+    top: 12px;
+    left: 5px;
+    width: 30px;
+    height: 0.2rem;
+  }
+
+
+  .contact-block-title2::after {
+    content: '';
+    position: absolute;
+    background: white;
+    left: 5px;
+    width: 30px;
+    height: 0.2rem;
+  }
+
+  .contact-block-title2::before {
+    content: '';
+    position: absolute;
+    background: white;
+    top: 12px;
+    left: 5px;
+    width: 30px;
+    height: 0.2rem;
+  }
+
+  .contact-block-title::after,
+  .contact-block-title2::after {
+    width: 17px;
+    top: 5px;
+    left: 18px;
+  }
+
+  .contact-block-description {
+    margin-block: 0px;
+
+  }
+
+  .contact-block-p {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 0.8;
+    margin: 10px 3px;
+    width: 80%;
+  }
+
+  .contact-a {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 10px 10px 10px 5px;
+  }
+
+  .contact-start-btn {
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 30px;
+    padding-inline: 12px;
+    border: 2px solid transparent;
+    background-color: snow;
+    box-shadow: inset 0 0 4px rgba(109, 62, 0, 0.271);
+    transition: border 0.45s;
+    cursor: pointer;
+  }
+
+  .office-card-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .temp-wrapper {
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 28rem;
+    background-color: white;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.061);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .office-cardh {
+    margin: 0.5rem 0.25rem;
+
+    opacity: 0.7;
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+
+  .office-cardh2 {
+    display: inline;
+    margin: 0 0.25rem;
+    opacity: 0.7;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .office-cardh2::after {
+    content: '';
+    width: 5ch;
+    height: 1px;
+    background: orangered;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+
+  .office-cardp {
+    margin: 1.5rem 0.25rem;
+    width: 90%;
+  }
+
+  .temp-wrapper {
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .temp-wrapper::before {
+    position: absolute;
+    bottom: -90px;
+    right: -75px;
+    content: url(/assets/icons/placeholder.png);
+    opacity: 0.3;
+    transform: scale(0.3);
+    filter: brightness(0.9) hue-rotate(10deg);
+  }
+
+  /**************************** Contact Page ************************************/
+
+  /**************************** About Page ************************************/
+
+
+
+  .about-singlecard {
+    background: linear-gradient(rgb(18, 18, 18), rgb(24, 24, 24));
+    position: relative;
+    box-shadow: none;
+    z-index: 0;
+    max-width: 350px;
+    transition: all 0.45s;
+  }
+
+
+
+
+  .about-singlecard:hover {
+    background: linear-gradient(rgb(255, 69, 0), rgba(255, 166, 0));
+    box-shadow: none;
+  }
+
+  .cardonmain {
+    background: linear-gradient(rgba(255, 166, 0), rgb(255, 69, 0));
+    box-shadow: none;
+    color: white;
+    opacity: 1;
+    transform: scale(0.94);
+    box-shadow: 0 0 50px gainsboro;
+    height: fit-content;
+  }
+
+
+
+  .about-singlecard p:first-child {
+    width: 80%;
+  }
+
+  .about-singlecard:hover p~p {
+    color: white;
+  }
+
+  .about-singlecard:hover p:first-child {
+    font-weight: 500;
+  }
+
+  .about-singlecard p:first-child {
+    width: 70%;
+  }
+
+  .about-singlecard p~p {
+    position: static;
+  }
+
+
+  /**************************** About Page ************************************/
+
+
+
+
+  /**************************** Career Page ************************************/
+
+
+
+  .joblist {
+    margin: 1rem 0 0 0;
+    padding: 1rem 1rem;
+    background-color: rgba(247, 247, 247);
+    border-bottom: 2px solid orangered;
+    border-right: 2px solid orangered;
+    font-size: 18px;
+    color: black;
+    min-width: 100%;
+
+  }
+
+  .job-title {
+    padding: 0;
+    font-weight: bold;
+    color: orangered;
+    border-bottom: 2px solid orange;
+    margin: 0;
+    border: none;
+    transition: all 0.45s;
+    position: relative;
+    padding-inline: 2rem;
+
+  }
+
+  .job-title:after {
+    content: '';
+    clip-path: inset(0 0 0 0);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("/assets/icons/laravel.png")no-repeat;
+    background-size: contain;
+  }
+
+
+  .job-info-heading {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    margin-block: 1rem;
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+  }
+
+  .job-info-description {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    margin-block: 0.5em;
+    list-style: none;
+  }
+
+  .job-title-hides-this {
+    display: none;
+  }
+
+  /**************************** Career Page ************************************/
+
+
+
+  /**************************** WebDevelopment Page ************************************/
+
+
+  .web-dev-page-c::after {
+    content: '';
+    clip-path: inset(0 0 0 0);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("/assets/icons/globe.png");
+    background-size: contain;
+  }
+
+  .web-dev-page-b::after {
+    content: '';
+    clip-path: inset(0 0 0 0);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("/assets/icons/code.png");
+    background-size: contain;
+  }
+
+  .web-dev-page-a::after {
+    content: '';
+    clip-path: inset(0 0 0 0);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("/assets/icons/compress.png");
+    background-size: contain;
+  }
+
+  .process {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+  }
+
+  .process::after,
+  .process:before {
+    content: '';
+    filter: hue-rotate(180deg) opacity(0.9);
+    clip-path: inset(0 0 0 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("https://img.freepik.com/premium-photo/white-background-with-blue-background-word-white-it_207225-64.jpg")no-repeat;
+    background-size: cover;
+  }
+
+  .process::before {
+    filter: none;
+    z-index: 8;
+    background: url("/assets/noise.png")repeat;
+  }
+
+
+
+  /**************************** WebDevelopment Page ************************************/

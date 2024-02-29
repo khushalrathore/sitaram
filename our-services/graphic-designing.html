@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/trademark/icon.png" type="image/x-icon">
+  <title>Graphic Designing &bullet; Sitaram Technosoft</title>
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+  <style>
+    @media only screen and (max-width:1100px) {
+      .trend-block {
+        flex-direction: column !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header-mobile" style="position: sticky;">
+    <div style="margin:0;padding: 0;"><a href="/"><img class="logoimg-mobile" src="/assets/trademark/logo.png"></a>
+    </div>
+    <div class="span-container" onclick="toggleMenu('mobile-menu')"><span class="span1"></span></div>
+    <div class="mobile-menu" id="mobile-menu" style="position:fixed">
+      <div
+        style="position:fixed;top:69px;right:6px;background:white;-webkit-backdrop-filter: blur(200px);backdrop-filter: blur(200px);padding: 20px 30px;border-radius: 0px;display: flex;flex-direction: column;justify-content: end;align-items: start; box-shadow: 0 0 120px rgba(0, 0, 0, 0.189);border-radius: 5px;">
+        <div class="mobile-menu-text" onclick="toggleMenu('company-menu')">Company
+          <ul class="mobile-menu-ul" id="company-menu" style="display: none;">
+            <li class="mobile-menu-li"><a href="/company/about.html" style="color:inherit; text-decoration: none;">About
+                Us</a></li>
+            <li class="mobile-menu-li"><a href="/company/careers.html"
+                style="color:inherit; text-decoration: none;">Career
+                @SitaramTechnosoft</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-text" onclick="toggleMenu('services-menu')">Our Services
+          <ul class="mobile-menu-ul" id="services-menu" style="display: none;">
+            <li class="mobile-menu-li"><a href="/our-services/web-development.html"
+                style="color:inherit; text-decoration: none;">Web Development</a></li>
+            <li class="mobile-menu-li"><a href="/our-services/e-commerce.html"
+                style="color:inherit; text-decoration: none;">ECommerce</a></li>
+            <li class="mobile-menu-li"><a href="/our-services/digital-marketing.html"
+                style="color:inherit; text-decoration: none;">Digital
+                Marketing</a></li>
+            <li class="mobile-menu-li"><a href="/our-services/graphic-designing.html"
+                style="color:inherit; text-decoration: none;">Graphic
+                Designing</a></li>
+            <li class="mobile-menu-li"><a href="/our-services/app-devlopment.html"
+                style="color:inherit; text-decoration: none;">App Development</a></li>
+            <li class="mobile-menu-li"><a href="/photography/photography.html"
+                style="color:inherit; text-decoration: none;">Photography</a></li>
+            <li class="mobile-menu-li"><a href="/our-services/domain-registration.html"
+                style="color:inherit; text-decoration: none;">Domain
+                Registration</a></li>
+            <li class="mobile-menu-li"><a href="/our-services/hosting-services.html"
+                style="color:inherit; text-decoration: none;">Hosting
+                Services</a></li>
+            <li class="mobile-menu-li"><a href="/our-services/whatsapp-sms-services.html"
+                style="color:inherit; text-decoration: none;">Whatsapp &
+                SMS</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-text" onclick="toggleMenu('portfolio-menu')">Portfolio
+          <ul class="mobile-menu-ul" id="portfolio-menu" style="display: none;">
+            <li class="mobile-menu-li"><a href="/portfolio/website-development-portfolio.html"
+                style="color:inherit; text-decoration: none;">Website Development Portfolio</a></li>
+            <li class="mobile-menu-li"><a href="/portfolio/digital-marketing-portfolio.html"
+                style="color:inherit; text-decoration: none;">Digital
+                Marketing Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-text" onclick="toggleMenu('products-menu')">Our Products
+          <ul class="mobile-menu-ul" id="products-menu" style="display: none;">
+            <li class="mobile-menu-li"><a href="/our-products/solar-crm.html"
+                style="color:inherit; text-decoration: none;">Solar CRM</a></li>
+            <li class="mobile-menu-li"><a href="/our-products/billing-software.html"
+                style="color:inherit; text-decoration: none;">Billing
+                Software</a></li>
+            <li class="mobile-menu-li"><a href="/our-products/e-commerce-solution.html"
+                style="color:inherit; text-decoration: none;">ECommerce
+                Solution</a></li>
+            <li class="mobile-menu-li"><a href="/our-products/inventory-management.html"
+                style="color:inherit; text-decoration: none;">Inventory
+                Management</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <header style="margin:0;">
+    <div class="topbar">
+      <nav style="margin:0">
+        <div><a href="/"><img class="logoimg" src="/assets/trademark/logo.png"></a></div>
+        <div>Company
+          <ul>
+            <li><a href="/company/about.html" style="color:inherit; text-decoration: none;">About Us</a></li>
+            <li><a href="/company/careers.html" style="color:inherit; text-decoration: none;">Career
+                @SitaramTechnosoft</a></li>
+          </ul>
+        </div>
+
+        <div><b style="color: orangered;">Our Services</b>
+          <ul>
+            <li><a href="/our-services/web-development.html" style="color:inherit; text-decoration: none;">Web
+                Development</a>
+            </li>
+            <li><a href="/our-services/e-commerce.html" style="color:inherit; text-decoration: none;">ECommerce</a></li>
+            <li><a href="/our-services/digital-marketing.html" style="color:inherit; text-decoration: none;">Digital
+                Marketing</a></li>
+            <li><a href="/our-services/graphic-designing.html" style="color:inherit; text-decoration: none;">Graphic
+                Designing</a></li>
+            <li><a href="/our-services/app-devlopment.html" style="color:inherit; text-decoration: none;">App
+                Development</a>
+            </li>
+            <li><a href="/our-services/photography.html" style="color:inherit; text-decoration: none;">Photography</a>
+            </li>
+            <li><a href="/our-services/domain-registration.html" style="color:inherit; text-decoration: none;">Domain
+                Registration</a></li>
+            <li><a href="/our-services/hosting-services.html" style="color:inherit; text-decoration: none;">Hosting
+                Services</a>
+            </li>
+            <li><a href="/our-services/whatsapp-sms-services.html"
+                style="color:inherit; text-decoration: none;">Whatsapp &
+                SMS</a></li>
+          </ul>
+        </div>
+
+        <div>Portfolio
+          <ul>
+            <li><a href="/portfolio/website-development-portfolio.html"
+                style="color:inherit; text-decoration: none;">Website Development Portfolio</a></li>
+            <li><a href="/portfolio/digital-marketing-portfolio.html"
+                style="color:inherit; text-decoration: none;">Digital
+                Marketing Portfolio</a></li>
+          </ul>
+        </div>
+
+        <div>Our Products
+          <ul>
+            <li><a href="/our-products/solar-crm.html" style="color:inherit; text-decoration: none;">Solar CRM</a></li>
+            <li><a href="/our-products/billing-software.html" style="color:inherit; text-decoration: none;">Billing
+                Software</a></li>
+            <li><a href="/our-products/e-commerce-solution.html" style="color:inherit; text-decoration: none;">ECommerce
+                Solution</a></li>
+            <li><a href="/our-products/inventory-management.html"
+                style="color:inherit; text-decoration: none;">Inventory
+                Management</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="blogsandcontactusdiv">
+        <ul class="blogsandcontactus"><a href="/blog.html" style="color:inherit; text-decoration: none;">Ḇlog</a>
+        </ul>
+        <ul class="blogsandcontactus"><a href="/contact.html" style="color:inherit; text-decoration: none;">Contact
+            Us</a></ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="pages-hero hero-img">
+      <div style="position: relative;z-index:2;">
+        <p class="contact-block-title2" style="color: white;">Our Services</p>
+        <h1 class="contact-block-description" style="font-size: 60px;color: white;">Graphic Designing</h1>
+        <p class="contact-block-p" style="color: white;">Elegant &amp; Simple user experience over our servcies makes us
+          distinct in the market.</p>
+        <br>
+
+      </div>
+
+
+      <div style="display: flex;position: relative;z-index:2;flex-direction: row; align-content: space-between;">
+        <div class="hideonmobile pages-hero-image"
+          style="background: url(/assets/icons/graphic-hero.gif)no-repeat center center;background-size: contain;">
+        </div>
+      </div>
+    </div>
+
+    <div class="trend-block"
+      style="margin:0;padding:5rem 3rem;display:flex;flex-direction: row;justify-content: space-between;">
+      <div style="margin:0;padding:0">
+        <div style="display:flex;flex-direction: column;justify-content: start;align-items: start;min-width: 100%">
+          <p class="contact-block-title" style="color: orangered;">Ads, Social Media Posts &amp; many
+            more... </p>
+          <h1 class="contact-block-description" style="color: black;">Why Graphic Design matters?</h1>
+          <p class="contact-block-p" style="color:rgba(0, 0, 0, 0.724)">Graphic design is vital for effective visual
+            communication, conveying messages through compelling imagery, enhancing brand identity, and creating
+            memorable user experiences.</p>
+        </div>
+        <div class="joblist"
+          style="border-right: none;border-bottom:2px solid rgba(255, 68, 0, 0.654);background:white">
+          <a onclick="toggleList('job-title-hides-this')">
+            <ul class=" job-title web-dev-page-a">Experience
+              <li class=" job-title-hides-this" id="job-title-hides-this" style="margin:0;padding:0;list-style: none;">
+              <li class="job-info-description">Graphic design enhances user experiences, creating visually appealing and
+                intuitive designs that captivate audiences, facilitate interaction, and leave a lasting positive
+                impression.
+              </li>
+            </ul>
+            </li>
+            </ul>
+          </a>
+
+
+        </div>
+        <div class="joblist"
+          style="border-right: none;border-bottom:2px solid rgba(255, 68, 0, 0.654);background:white">
+          <a onclick="toggleList('job-title-hides-this')">
+            <ul class=" job-title web-dev-page-b">Identity
+              <li class=" job-title-hides-this" id="job-title-hides-this" style="margin:0;padding:0;list-style: none;">
+              <li class="job-info-description">It plays a crucial role in building and maintaining brand identity, using
+                visual elements to establish a distinctive and memorable representation in the market.
+              </li>
+            </ul>
+            </li>
+            </ul>
+          </a>
+
+
+        </div>
+        <div class="joblist"
+          style="border-right: none;border-bottom:2px solid rgba(255, 68, 0, 0.654);background:white">
+          <a onclick="toggleList('job-title-hides-this')">
+            <ul class=" job-title web-dev-page-c">Communication
+              <li class=" job-title-hides-this" id="job-title-hides-this" style="margin:0;padding:0;list-style: none;">
+              <li class="job-info-description">Graphic design is pivotal in clear communication, utilizing visual
+                elements to convey messages effectively, capturing attention, and fostering understanding across diverse
+                audiences.</li>
+            </ul>
+            </li>
+            </ul>
+          </a>
+
+
+        </div>
+      </div>
+
+      <div class="about-form" style="padding-top:5rem"
+        style="display: flex;flex-direction: column;flex-wrap: wrap;position: relative;z-index:2;padding:0">
+        <div class="popup" style="display: flex;flex-direction: column;flex-wrap: wrap;">
+          <form class="form" style="display: flex;flex-direction: column;flex-wrap: wrap;">
+            <h1 style="color:black;font-weight: 600;font-size: 20px;">Get A Free Keystroke Quote Now ↓</h1>
+            <input placeholder="Full Name" title="Full Name" name="name" type="text" class="input_field" required
+              style="display: flex;flex-direction: column;flex-wrap: wrap;">
+            <input placeholder="+91" title="Mobile Number" name="mobile" type="tel" class="input_field" required
+              style="display: flex;flex-direction: column;flex-wrap: wrap;">
+            <input placeholder="example@mail.com" title="example@mail.com" name="email" type="email" class="input_field"
+              required style="display: flex;flex-direction: column;flex-wrap: wrap;">
+            <input placeholder="Message" title="Full Name" name="name" type="text" class="input_field" required
+              style="display: flex;flex-direction: column;flex-wrap: wrap;">
+            <button class="submit" style="display: flex;flex-direction: column;flex-wrap: wrap;">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="trend-block process"
+      style="margin:0;padding:5rem 3rem;display:flex;flex-direction: column;justify-content: space-between;">
+      <div style="margin:0;padding:0">
+        <div style="display:flex;flex-direction: column;justify-content: center;align-items: start;min-width: 100%">
+          <p class="contact-block-title" style="color: orangered;">Process</p>
+          <h1 class="contact-block-description" style="color: black;">Our Graphic Design process</h1>
+          <p class="contact-block-p" style="color:rgba(0, 0, 0, 0.724);">In our graphic design process, we meticulously
+            analyze client needs, conceptualize creative solutions, refine designs iteratively, ensuring impactful
+            visual communication that resonates with target audiences.
+          </p>
+        </div>
+
+
+      </div>
+      <div style="margin:0 auto;padding:0;">
+        <div style="margin:0;padding: 0;flex-direction: column;color:black;">
+          <div style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
+            <div style="display: flex;position: relative;z-index:2;flex-direction: row; align-content: space-between;">
+              <div class="hideonmobile"
+                style="background: url(/assets/icons/analysis.gif)no-repeat center center; height: 350px;width:350px;background-size: contain;"
+                ;>
+              </div>
+            </div>
+            <div style="margin:0;padding: 0;">
+              <p style="margin:0;padding:0;margin-top:1rem;color:orangered;font-weight: 700;">Step One</p>
+              <h1 style="margin:0;padding:0;margin-top:1rem;color:black;font-weight: 400;">Analysis and
+                Conceptualization</h1>
+              <p style="margin:0;padding:0;margin-top:1rem;color:rgb(86, 86, 86);font-weight: 400;max-width:60ch">We
+                begin by thoroughly analyzing client requirements, market trends, and target audience preferences.
+                Through this understanding, we conceptualize creative solutions that align with the brand identity and
+                communication objectives.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:0;padding: 0;flex-direction: column;color:black;">
+          <div style="display: flex;flex-direction: row-reverse;align-items: center;justify-content: center;">
+            <div style="display: flex;position: relative;z-index:2;flex-direction: row; align-content: space-between;">
+              <div class="hideonmobile"
+                style="background: url(/assets/icons/planning.gif)no-repeat center center; height: 350px;width:350px;background-size: contain;"
+                ;>
+              </div>
+            </div>
+            <div style="margin:0;padding: 0;">
+              <p style="margin:0;padding:0;margin-top:1rem;color:orangered;font-weight: 700;">Step Two</p>
+              <h1 style="margin:0;padding:0;margin-top:1rem;color:black;font-weight: 400;">Iterative Design Refinement
+              </h1>
+              <p style="margin:0;padding:0;margin-top:1rem;color:rgb(86, 86, 86);font-weight: 400;max-width:60ch">
+                Following the conceptualization, we embark on an iterative design refinement process. This involves
+                crafting and revising designs based on client feedback, ensuring the visuals align with the brand's
+                identity and effectively communicate the intended message.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:0;padding: 0;flex-direction: column;color:black;">
+          <div style="display: flex;flex-direction: row;align-items: center;justify-content: center;">
+            <div style="display: flex;position: relative;z-index:2;flex-direction: row; align-content: space-between;">
+              <div class="hideonmobile"
+                style="background: url(/assets/icons/implementation.gif)no-repeat center center; height: 350px;width:350px;background-size: contain;"
+                ;>
+              </div>
+            </div>
+            <div style="margin:0;padding: 0;">
+              <p style="margin:0;padding:0;margin-top:1rem;color:orangered;font-weight: 700;">Step Three</p>
+              <h1 style="margin:0;padding:0;margin-top:1rem;color:black;font-weight: 400;">Client Collaboration</h1>
+              <p style="margin:0;padding:0;margin-top:1rem;color:rgb(86, 86, 86);font-weight: 400;max-width:60ch">
+                Client collaboration is integral to our process. We engage in open communication, actively seeking
+                client input throughout the design stages. This collaborative approach ensures that the final designs
+                meet and exceed client expectations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:0;padding: 0;flex-direction: column;color:black;">
+          <div style="display: flex;flex-direction: row-reverse;align-items: center;justify-content: center;">
+            <div style="display: flex;position: relative;z-index:2;flex-direction: row; align-content: space-between;">
+              <div class="hideonmobile"
+                style="background: url(/assets/icons/deploy.gif)no-repeat center center; height: 350px;width:350px;background-size: contain;"
+                ;>
+              </div>
+            </div>
+            <div style="margin:0;padding: 0;">
+              <p style="margin:0;padding:0;margin-top:1rem;color:orangered;font-weight: 700;">Step Four</p>
+              <h1 style="margin:0;padding:0;margin-top:1rem;color:black;font-weight: 400;">Finalization and Delivery
+              </h1>
+              <p style="margin:0;padding:0;margin-top:1rem;color:rgb(86, 86, 86);font-weight: 400;max-width:60ch">
+                After thorough analysis, refinement, and collaboration, we finalize the designs and deliver high-quality
+                graphic assets. This step involves preparing files for various platforms, ensuring seamless integration
+                and impactful visual communication for the intended audience.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="social-icons-layout">
+      <a href="https://facebook.com/SitaramTechnosoft" aria-label="Our Faceboook Page"><img src="/assets/icons/fb.png"
+          width="24px" /></a>
+      <a href="https://instagram.com/SitaramTechnosoft" aria-label="Our Instagram Profile"><img
+          src="/assets/icons/insta.png" width="24px" /></a>
+      <a href="https://linkedin.com/SitaramTechnosoft" aria-label="Our Linkedin Profile"><img
+          src="/assets/icons/linkedin.png" width="24px" /></a>
+      <a href="https://twitter.com/SitaramTechnosoft" aria-label="Our Twitter Profile"><img
+          src="/assets/icons/twitter.png" width="24px" /></a>
+    </div>
+
+    <div class="footer-super-block">
+      <div class="get-in-touch">
+        <h1 class="get-in-touch-heading">Get in touch! 📧 </h1>
+        <p class="block-p get-in-touch-paragraph">Contact us for assistance. We're here to help you promptly.<br><br>
+        </p>
+        <form class="get-in-touch-form">
+          <input class="subscibe-footer" type="email" required placeholder="example@mail.com">
+          <input class="subcribe-footer-click" type="submit" value="Subscribe">
+        </form>
+      </div>
+
+      <div class="sitemap">
+        <ul class="sitemap-links-group-services">
+          Services
+          <li><a href="/our-services/web-development.html" class="sitemap-link"
+              aria-label="Learn more about our Web Development service">Web Development
+            </a></li>
+          <li><a href="/our-services/e-commerce.html" class="sitemap-link"
+              aria-label="Learn more about our ECommerce services">Ecommerce
+            </a></li>
+          <li><a href="/our-services/digital-marketing.html" class="sitemap-link"
+              aria-label="Learn more about our Digital Marketing services">Digital Marketing
+            </a></li>
+          <li><a href="/our-services/graphic-designing.html" class="sitemap-link"
+              aria-label="Learn more about our Graphic Designing">Graphic Design
+            </a></li>
+          <li><a href="/our-services/app-devlopment.html" class="sitemap-link"
+              aria-label="Learn more about our App Development services">App Development
+            </a></li>
+          <li><a href="/our-services/photography.html" class="sitemap-link"
+              aria-label="Learn more about our Photogrpahy services">Photogrphy
+            </a></li>
+          <li><a href="/our-services/domain-registration.html" class="sitemap-link"
+              aria-label="Learn more about our Domain Registration services">Domain Registration
+            </a></li>
+          <li><a href="/our-services/hosting-services.html" class="sitemap-link"
+              aria-label="Learn more about our Hosting services">Hosting Services
+            </a></li>
+          <li><a href="/our-services/whatsapp-sms-services.html" class="sitemap-link"
+              aria-label="Learn more about our Whatsapp & SMS services"> Whatsapp & SMS
+            </a></li>
+        </ul>
+        <ul class="sitemap-links-group-resources">
+          Resources
+          <li><a href="/blog.html" class="sitemap-link" aria-label="Check out Our Blog">Blog</a></li>
+          <li><a href="/" class="sitemap-link" aria-label="Trending Technologies at Sitaram Infotech">Technology</a>
+          </li>
+          <li><a href="/portfolio/website-development-portfolio.html" class="sitemap-link"
+              aria-label="Check out Our Portfolio">Portfolio</a></li>
+        </ul>
+        <ul class="sitemap-links-group-support">
+          Support
+          <li><a href="/contact.html" class="sitemap-link" aria-label="Contact Us">Contact</a>
+          </li>
+          <li><a href="/privacy-policy.html" class="sitemap-link" aria-label="Our Privacy Policy">Privacy Policy</a>
+          </li>
+          <li><a href="/terms-of-use.html" class="sitemap-link" aria-label="Our Terms of Use">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-copyright"> © 2024. All rights reserved by Sitaram Technosoft.</div>
+      <div class="footer-bottom-privacy">
+        <a class="footer-bottom-privacy-policy" href="/privacy-policy.html" aria-label="Read our Privacy Policy">
+          Privacy Policy
+        </a>&nbsp; • &nbsp;
+        <a class="footer-bottom-privacy-terms" href="/terms-of-use.html" aria-label="Read our Terms of Use">
+          Terms of Use
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="/index.js"></script>
+</body>
+
+</html>
