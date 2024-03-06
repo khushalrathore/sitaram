@@ -1142,6 +1142,16 @@
       gap: 40px;
       justify-content: start;
       align-content: start;
+      position: relative;
+    }
+
+    footer:after {
+      inset: 0;
+      content: '';
+      position: absolute;
+      filter: hue-rotate(30deg);
+      background: url(/assets/icons/footer.svg)no-repeat bottom center;
+      z-index: -1;
     }
 
 
