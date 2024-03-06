@@ -49,6 +49,7 @@
 
     .services-cardslayout {
       overflow-x: scroll;
+      scroll-behavior: smooth;
       display: flex;
       width: 93dvw;
       gap: 2rem;
@@ -60,7 +61,7 @@
     .services-card {
       gap: 2rem !important;
       scroll-snap-type: x mandatory;
-      min-width: 400px !important;
+      min-width: 350px !important;
       position: relative;
     }
 
@@ -1456,17 +1457,17 @@
       gap: 40px
     }
 
-    .get-in-touch {}
+    /* .get-in-touch {} */
 
     .get-in-touch-heading {
       margin: 0;
     }
 
-    .get-in-touch-paragraph {}
+    /* .get-in-touch-paragraph {} */
 
 
 
-    .subscibe-footer {}
+    /* .subscibe-footer {} */
 
     .subcribe-footer-click {
       margin-left: 20px;
