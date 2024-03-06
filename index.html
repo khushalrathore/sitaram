@@ -971,14 +971,17 @@
       }, 5000); //
     });
   </script>
-  <script>function autoScroll() {
+  <script>
+    function autoScroll() {
       const container = document.getElementById("scrollServices");
       const scrollWidth = container.scrollWidth;
       const clientWidth = container.clientWidth;
       let scrollPos = 0;
       let isScrolling = true; // Initially set to true to start auto-scrolling
 
+      // Check if scrolling is necessary
       if (scrollWidth > clientWidth) {
+        // Define scrolling function
         const scroll = timestamp => {
           if (!isScrolling) return; // Pause scrolling if isScrolling is false
           scrollPos += 1; // Adjust scroll speed as needed
@@ -992,14 +995,16 @@
           requestAnimationFrame(scroll);
         };
 
+        // Start scrolling animation
         requestAnimationFrame(scroll);
 
         // Navigation buttons
         const prevBtn = document.querySelector(".prev-btn");
         const nextBtn = document.querySelector(".next-btn");
 
+        // Button functionality
         prevBtn.addEventListener("click", () => {
-          container.scrollLeft -= 800; // Adjust scroll distance as needed
+          container.scrollLeft -= 900; // Adjust scroll distance as needed
           isScrolling = false; // Pause auto-scrolling when button is clicked
           setTimeout(() => {
             isScrolling = true; // Resume auto-scrolling after a short delay
@@ -1007,7 +1012,7 @@
         });
 
         nextBtn.addEventListener("click", () => {
-          container.scrollLeft += 800; // Adjust scroll distance as needed
+          container.scrollLeft += 900; // Adjust scroll distance as needed
           isScrolling = false; // Pause auto-scrolling when button is clicked
           setTimeout(() => {
             isScrolling = true; // Resume auto-scrolling after a short delay

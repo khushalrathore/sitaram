@@ -46,37 +46,24 @@
       background-size: cover;
     }
 
-    html {
-      overflow-x: hidden;
-    }
+
 
     .services-cardslayout {
 
+      overflow-x: hidden;
       display: flex;
       width: 93dvw;
       gap: 2rem;
       min-height: 600px;
       scroll-behavior: smooth;
       scrollbar-width: none;
-      animation: scrollAnimation 20s linear infinite;
-
     }
 
-    @keyframes scrollAnimation {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(calc(-100% - 2rem));
-        /* Adjust based on the width of your cards and gap */
-      }
+    .services-cardslayout::-webkit-scrollbar {
+      width: 0;
     }
 
-    .services-cardslayout ::-webkit-scrollbar {
-      display: none;
-      /* Safari and Chrome */
-    }
+
 
 
 
