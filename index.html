@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/assets/trademark/icon.png" type="image/x-icon">
   <title>Sitaram Technosoft &bullet; Web Development Company in Jaipur</title>
-
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/owl.carousel.min.css" rel="stylesheet">
@@ -16,6 +15,11 @@
 
 
   <style>
+    p.contact-block-p::after {
+      background: orangered !important;
+      color: orangered;
+    }
+
     .row,
     #bootcarousel {
       min-width: 100dvw;
@@ -71,12 +75,15 @@
       }
 
       .sitebar-with-contact {
-        justify-content: start !important;
         padding-inline: 2rem;
       }
     }
 
     @media only screen and (max-width: 768px) {
+      .contact-area {
+        display: none;
+      }
+
       .mainpage-hero {
         margin-top: 0.5rem !important;
       }
@@ -765,8 +772,98 @@
     </div>
   </div>
 
-  </div>
+  <div class="contact-area default-padding"
+    style="margin: 0;padding: 1.25rem;justify-content: start;align-items: start;overflow: hidden;">
+    <div class="container" style="margin: 0;display: flex;justify-content: start;align-items: start;">
+      <div class="row">
+        <div class="contact-items bg-contain" style="background-image: url(images/map.svg);">
+          <div class="col-md-4 address">
+            <div class="address-items">
+              <ul class="info">
+                <li>
+                  <h4>Office Location</h4>
+                  <div style="display: grid;grid-template-columns: 80px 1fr;">
+                    <div class="icon" style="display: flex;justify-content: center;align-items: center;"><b>📍</b></div>
+                    <span>Global Office, Govindpura, Jaipur(302012), Rajasthan</span>
+                  </div>
+                </li>
+                <li>
+                  <h4>Office Hours</h4>
+                  <div style="display: grid;grid-template-columns: 80px 1fr;">
 
+                    <div class="icon" style="display: flex;justify-content: center;align-items: center;"><b>🕚</b></div>
+                    <span>10:00 - 6:30<br>Sunday Closed</span>
+                  </div>
+                </li>
+                <li>
+                  <h4>Phone</h4>
+                  <div style="display: grid;grid-template-columns: 80px 1fr;">
+
+                    <div class="icon" style="display: flex;justify-content: center;align-items: center;"><b>📞</b></div>
+                    <span>+91 8000735641</span>
+                  </div>
+                </li>
+                <li>
+                  <h4>Email</h4>
+                  <div style="display: grid;grid-template-columns: 80px 1fr;">
+
+                    <div class="icon" style="display: flex;justify-content: center;align-items: center;"><b>📧</b></div>
+                    <span>sitaramtechnosoft@gmail.com<br></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8 contact-form">
+            <h2>Let's lalk about your idea</h2>
+            <p style="color:gray" class="contact-block-p">
+              Our next drew much you with rank. Tore many held age hold rose than our. She literature sentiments any
+              contrasted.<br> Set aware joy sense young now tears china shy.
+            </p>
+            <form action=" " method="POST" class="contact-form">
+              <div class="col-md-6" style="flex-direction: column;padding-inline: 0;">
+                <div class="row" style="padding-inline: 15px;">
+                  <div class="form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text"
+                      style="padding-inline: 20px;max-width: 50ch;">
+                    <span class="alert-error"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="display: flex;">
+                <div class="col-md-6">
+                  <div class="form-group" style="display: flex;flex-direction: column !;">
+                    <input class="form-control" id="email" name="email" placeholder="Email*" type="email"
+                      style="padding-inline: 20px;width: 50ch;">
+                    <span class="alert-error"></span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="form-group comments">
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"
+                      style="max-width: 50ch;padding-inline: 20px"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="row">
+                  <button type="submit" name="submit" id="submit">
+                    Send Message </i><b>-></b> </button>
+                </div>
+              </div>
+              <!-- Alert Message -->
+              <div class="col-md-12 alert-notification">
+                <div id="message" class="alert-msg"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="site-footer">
     <div class="social-icons-layout">
       <a href="https://facebook.com/SitaramTechnosoft" aria-label="Our Faceboook Page"><img src="/assets/icons/fb.png"

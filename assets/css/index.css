@@ -55,6 +55,8 @@
       min-height: 600px;
       scroll-behavior: smooth;
       scrollbar-width: none;
+      animation: translate 10s linear forwards;
+
     }
 
     .services-cardslayout ::-webkit-scrollbar {
@@ -70,6 +72,19 @@
       scroll-snap-type: x mandatory;
       min-width: 350px !important;
       position: relative;
+
+    }
+
+    @keyframes translate {
+      from {
+        transform: translateX(-100px);
+      }
+
+      to {
+        transform: translateX(0px);
+
+      }
+
     }
 
     .prev-btn {
