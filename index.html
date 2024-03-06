@@ -696,6 +696,7 @@
 
       </div>
       <button class="carousel-btn next-btn" style="position: absolute;">▶</button>
+
     </div>
   </div>
 
@@ -871,11 +872,11 @@
         const nextBtn = document.querySelector(".next-btn");
 
         prevBtn.addEventListener("click", () => {
-          scrollPos += delta * 0.51; // Adjust scroll speed as needed
+          container.scrollLeft -= 800; // Adjust scroll distance as needed
         });
 
         nextBtn.addEventListener("click", () => {
-          scrollPos -= delta * 0.051; // Adjust scroll speed as needed
+          container.scrollLeft += 800; // Adjust scroll distance as needed
         });
       }
     }
