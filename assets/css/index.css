@@ -18,6 +18,118 @@
       font-family: "Inter", sans-serif;
     }
 
+    .bg-cover-1,
+    .bg-cover-2,
+    .bg-cover-3 {
+      position: relative;
+    }
+
+    .bg-cover-1::after,
+    .bg-cover-2::after,
+    .bg-cover-3::after {
+      background: url(/images/16.jpg)no-repeat center center;
+      content: ' ';
+      background-size: cover;
+      position: absolute;
+      inset: 0;
+      filter: brightness(0.5);
+      z-index: 1;
+    }
+
+    .bg-cover-2::after {
+      background: url(/images/17.jpg)no-repeat;
+      background-size: cover;
+    }
+
+    .bg-cover-3::after {
+      background: url(/images/18.jpg)no-repeat;
+      background-size: cover;
+    }
+
+
+    .services-cardslayout {
+      overflow-x: scroll;
+      display: flex;
+      width: 93dvw;
+      gap: 2rem;
+      min-height: 600px;
+    }
+
+
+
+    .services-card {
+      gap: 2rem !important;
+      scroll-snap-type: x mandatory;
+      min-width: 400px !important;
+      position: relative;
+    }
+
+    .services-card::after {
+      position: absolute;
+      content: '';
+      inset: 0;
+      background: url(/assets/noise.png)repeat;
+    }
+
+    .services-card:nth-child(n) {
+      background: rgb(255, 169, 71) !important;
+    }
+
+    .services-card:nth-child(2n) {
+      background: rgb(255, 123, 0) !important;
+    }
+
+    .services-card:nth-child(3n) {
+      background: rgb(255, 129, 71) !important;
+    }
+
+    .services-card:nth-child(4n) {
+      background: rgb(255, 187, 71) !important;
+    }
+
+    .services-card:nth-child(5n) {
+      background: rgb(255, 140, 0) !important;
+    }
+
+
+
+    .services-card,
+    .services-cardp,
+    .services-cardh {
+      scroll-snap-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 5px !important;
+      color: black !important
+    }
+
+    .services-cardh {
+      font-size: 24px !important;
+      font-weight: 700;
+      margin-block: 0 !important;
+    }
+
+    .learn-more {
+      font-size: 18px !important;
+      font-weight: 500;
+      display: inline !important;
+      margin-block: 0 !important;
+      opacity: 0;
+      transition: opacity .25s;
+      color: black !important;
+      font-weight: 900 !important;
+      position: relative;
+      z-index: 2 !important
+    }
+
+    .services-card:hover .learn-more {
+      opacity: 1;
+
+    }
+
     @media only screen and (min-width: 768px) {
       .hideonmobile {
         display: block !important
