@@ -854,29 +854,20 @@
       const container = document.getElementById("scrollServices");
       const scrollWidth = container.scrollWidth;
       const clientWidth = container.clientWidth;
+      let scrollPos = 0;
+      let isScrolling = true; // Initially set to true to start auto-scrolling
 
       if (scrollWidth > clientWidth) {
-        let scrollPos = 0;
-        let lastTimestamp = null;
-
         const scroll = timestamp => {
-          if (!lastTimestamp) {
-            lastTimestamp = timestamp;
-          }
-
-          const delta = timestamp - lastTimestamp;
-          lastTimestamp = timestamp;
-
-          scrollPos += delta * 0.051; // Adjust scroll speed as needed
+          if (!isScrolling) return; // Pause scrolling if isScrolling is false
+          scrollPos += 1; // Adjust scroll speed as needed
           if (scrollPos >= scrollWidth - clientWidth) {
             scrollPos = 0;
           }
-
           container.scrollTo({
             left: scrollPos,
             behavior: "auto" // You can adjust the scrolling behavior as needed
           });
-
           requestAnimationFrame(scroll);
         };
 
@@ -888,10 +879,18 @@
 
         prevBtn.addEventListener("click", () => {
           container.scrollLeft -= 800; // Adjust scroll distance as needed
+          isScrolling = false; // Pause auto-scrolling when button is clicked
+          setTimeout(() => {
+            isScrolling = true; // Resume auto-scrolling after a short delay
+          }, 500);
         });
 
         nextBtn.addEventListener("click", () => {
           container.scrollLeft += 800; // Adjust scroll distance as needed
+          isScrolling = false; // Pause auto-scrolling when button is clicked
+          setTimeout(() => {
+            isScrolling = true; // Resume auto-scrolling after a short delay
+          }, 500);
         });
       }
     }
