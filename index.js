@@ -30,3 +30,18 @@ heroElements.forEach(function(hero) {
     hero.style.padding = '3rem';
 });
 }
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to change the content of the element
+    function changeContent(newContent) {
+        const paragraph = document.querySelector('.get-in-touch-paragraph');
+        if (paragraph) {
+            paragraph.textContent = newContent;
+        }
+    }
+
+    // Example usage: Change the content to "Contact us now for more information!"
+    changeContent("Global Office, Govindpura, Jaipur(302012), Rajasthan");
+});
+document.querySelectorAll('.get-in-touch-paragraph').forEach(element => {
+    element.style.margin = '1rem 0';
+});
