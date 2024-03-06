@@ -118,7 +118,7 @@
       font-weight: 500;
       display: inline !important;
       margin-block: 0 !important;
-      opacity: 0;
+      opacity: 0.8;
       transition: opacity .25s;
       color: black !important;
       font-weight: 900 !important;
